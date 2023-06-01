@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Start Selenium</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#startButton").click(function() {
+                $.get("/start_selenium", function(data) {
+                    alert("Selenium code started!");
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Start Selenium</h1>
+    <button id="startButton">Start Selenium</button>
+</body>
+</html>
